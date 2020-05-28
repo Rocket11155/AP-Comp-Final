@@ -1,6 +1,7 @@
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
@@ -121,8 +122,31 @@ public class APCompFinal extends JFrame implements ActionListener
 			}
 		});
 		
-		for(lazer i: )
-		
+		for(lazer i: list3)
+		{
+			for(Ball j: list2)
+			{
+			
+				
+				if(i.getBounds().intersects(j.getBounds()) && i.getName() == "s1")
+				{
+					score1++;
+					System.out.println(score1);
+					list2.remove(j);
+					j.setLocation(2000,2000);
+				}
+				if(i.getBounds().intersects(j.getBounds()) && i.getName() == "s2")
+				{
+					score2++;
+				}
+				
+				
+				
+			}
+			
+			
+						
+		}
 		Timer t1 = new Timer(1,this);
 		t1.start();
 		
@@ -133,6 +157,9 @@ public class APCompFinal extends JFrame implements ActionListener
 		
 		setVisible(true);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		
+		
 	}
 
 	public static void main(String[] args) 
