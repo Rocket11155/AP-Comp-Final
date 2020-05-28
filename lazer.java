@@ -9,7 +9,7 @@ import javax.swing.JComponent;
 public class lazer extends JComponent
 {
 	private Rectangle2D.Double lazer = new Rectangle2D.Double(0,0,50,50);
-	private int dy = -2;
+	private int dy;
 	
 	public lazer(int x, int y)
 	{
