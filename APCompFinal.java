@@ -79,7 +79,7 @@ public class APCompFinal extends JFrame implements ActionListener
 					list.get(0).setDx(1);
 				if(e.getKeyCode() == e.VK_W && !fired)
 				{
-					lazer bullet = new lazer(list.get(0).getX()+8,580);
+					lazer bullet = new lazer(list.get(0).getX()+8,580,"s1");
 					bullet.setDy(-1);
 					add(bullet);
 					list3.add(bullet);
@@ -92,7 +92,7 @@ public class APCompFinal extends JFrame implements ActionListener
 					list.get(1).setDx(1);
 				if(e.getKeyCode() == e.VK_UP)
 				{
-					lazer bullet2 = new lazer(list.get(1).getX()+8,70);
+					lazer bullet2 = new lazer(list.get(1).getX()+8,70,"s2");
 					bullet2.setDy(1);
 					add(bullet2);
 					list3.add(bullet2);

@@ -31,6 +31,12 @@ public class lazer extends JComponent
 	{
 		dy=num;
 	}	
+	
+	public String getName()
+	{
+		return n;
+	}
+	
 	public void update()
 	{
 		this.setLocation(this.getX(),this.getY()+dy);
