@@ -120,7 +120,10 @@ public class APCompFinal extends JFrame implements ActionListener
 				
 			}
 		});
-		Timer t1 = new Timer(2,this);
+		
+		for(lazer i: )
+		
+		Timer t1 = new Timer(1,this);
 		t1.start();
 		
 		setPreferredSize(new Dimension(400,700));

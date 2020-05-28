@@ -10,11 +10,13 @@ public class lazer extends JComponent
 {
 	private Rectangle2D.Double lazer = new Rectangle2D.Double(0,0,50,50);
 	private int dy;
+	private String n;
 	
-	public lazer(int x, int y)
+	public lazer(int x, int y, String n)
 	{
 		this.setSize(new Dimension(5,20));
 		this.setLocation(x,y);
+		this.n = n;
 	}
 	
 	public void paintComponent(Graphics g)
